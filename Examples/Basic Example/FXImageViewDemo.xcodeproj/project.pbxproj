@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0107C2A21829A74500D0EFDB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0107C2A11829A74500D0EFDB /* Default-568h@2x.png */; };
 		01E993FE159BCA9C0059DD43 /* IMG_0150.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01E993FD159BCA9C0059DD43 /* IMG_0150.jpg */; };
 		01E99409159BD4B30059DD43 /* FXImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E99406159BD4B30059DD43 /* FXImageView.m */; };
 		01E9940A159BD4B30059DD43 /* UIImage+FX.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E99408159BD4B30059DD43 /* UIImage+FX.m */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0107C2A11829A74500D0EFDB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		01E993FD159BCA9C0059DD43 /* IMG_0150.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0150.jpg; sourceTree = "<group>"; };
 		01E99405159BD4B30059DD43 /* FXImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXImageView.h; sourceTree = "<group>"; };
 		01E99406159BD4B30059DD43 /* FXImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXImageView.m; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		01FA10C8145E9951001906CB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0107C2A11829A74500D0EFDB /* Default-568h@2x.png */,
 				01E993FD159BCA9C0059DD43 /* IMG_0150.jpg */,
 				01FA10C9145E9951001906CB /* FXImageViewDemo-Info.plist */,
 				01FA10CA145E9951001906CB /* InfoPlist.strings */,
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01FA10CC145E9951001906CB /* InfoPlist.strings in Resources */,
+				0107C2A21829A74500D0EFDB /* Default-568h@2x.png in Resources */,
 				01FA10D8145E9951001906CB /* ViewController.xib in Resources */,
 				01E993FE159BCA9C0059DD43 /* IMG_0150.jpg in Resources */,
 			);
@@ -228,12 +232,17 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
 			};
 			name = Debug;
 		};
@@ -245,6 +254,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -253,12 +263,17 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+				);
 			};
 			name = Release;
 		};
 		01FA10DC145E9951001906CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FXImageViewDemo/FXImageViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "FXImageViewDemo/FXImageViewDemo-Info.plist";
@@ -270,6 +285,7 @@
 		01FA10DD145E9951001906CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FXImageViewDemo/FXImageViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "FXImageViewDemo/FXImageViewDemo-Info.plist";
